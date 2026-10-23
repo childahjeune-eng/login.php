@@ -16,8 +16,11 @@ if (!isset($_SESSION["usuario"])) {
     <title>Document</title>
 </head>
 <body>
-    <h1>Bem-Vindo, <?php htmlspecialchars($_SESSION["usuario"]) ?></h1>
-    <p>Esta página é secreta. só quem faz lpgin consegue ver.</p>
-    <a href="sair.php">sair</a>
+    <main class="cartao">
+        <span class="selo">Área secreta</span>
+        <h1>Bem-Vindo, <?php htmlspecialchars($_SESSION["usuario"]) ?></h1>
+        <p>Esta página é secreta. só quem faz lpgin consegue ver.</p>
+        <a href="sair.php">sair</a>
+    </main>
 </body>
 </html>
